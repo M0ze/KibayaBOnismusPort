@@ -63,3 +63,11 @@ darkModeToggle.addEventListener('click', () => {
         window.updateParticleColor();
     }
 });
+
+// --- Mobile Navigation Toggle ---
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+if (hamburgerMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+        body.classList.toggle('nav-open');
+    });
+}
